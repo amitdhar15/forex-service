@@ -15,6 +15,15 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+                
+                
+                dir("build") {
+                        sh "pwd"
+                                }
+                
+                
+                
+                
                 echo 'Deploying....'
                 sh 'pwd'
                 sh 'ls -la '
