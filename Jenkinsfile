@@ -17,6 +17,7 @@ pipeline {
             steps {
                 echo 'Deploying....'
                 sh 'ls '
+                sh 'java -jar build\libs\forex-services.jar'
             }
         }
     }
