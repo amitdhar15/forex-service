@@ -23,7 +23,8 @@ pipeline {
                 sh 'ls -la '
                 sh 'cd libs'
                 sh 'ls -la '
-                sh 'java -jar forex-services.jar'
+                
+                sh 'java -jar /build/libs/forex-service.jar'
             }
         }
     }
