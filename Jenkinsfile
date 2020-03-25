@@ -17,7 +17,9 @@ pipeline {
             steps {
                 echo 'Deploying....'
                 sh 'ls '
-                sh 'java -jar build\libs\forex-services.jar'
+                sh 'cd build'
+                sh 'cd libs'
+                sh 'java -jar forex-services.jar'
             }
         }
     }
