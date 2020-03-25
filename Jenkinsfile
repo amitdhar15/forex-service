@@ -20,7 +20,7 @@ pipeline {
                 dir("build/libs") {
                         sh "pwd"
                         sh 'ls -la'
-                        sh 'java -jar **/build/libs/forex-service.jar'
+                        sh 'java -jar forex-service.jar'
                                 }
                 
                 
